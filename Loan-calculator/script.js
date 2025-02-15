@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const progress = Math.min(elapsed / duration, 1);
 
       const current = start + (end - start) * progress;
-      element.textContent = current.toFixed(2);
+      element.textContent = `₹${current.toFixed(2)}`;
 
       if (progress < 1) {
         requestAnimationFrame(update);
